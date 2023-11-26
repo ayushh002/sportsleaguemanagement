@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports League Management</title>
+  <script src="java.js"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500;700;800;900&display=swap');
+    #h1a{
+        margin:0;
+        text-align: center;
+        color:black;
+        background-color:#fff;
+        font-style:bold;
+        height:50px;
+        margin:0;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size:40px;
+    }
+    #h1b{
+        border-radius:5px;
+        margin:0;
+        text-shadow: 3px 3px 5px black;
+        text-align: center;
+        color:white;
+        background-color:#333333dc;
+        font-style:bold;
+        height:50px;
+        margin:0;
+        font-family:'Courier New', Courier, monospace;
+        font-size:40px;
+    }
+
+    h2{ 
+        text-shadow: 2px 2px 2px;
+        text-align: center;
+        color:black;
+        background-color:white;
+        font-style:bold;
+        margin:0;
+        font-family:'Courier New', Courier, monospace;
+        font-size:40px; 
+    }
+    .para{
+        font-style: italic;
+        font-size: 18px;
+        color:white;
+        text-align-last: center;
+        text-align:justify;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    *{
+        background-color: #f4f4f4;
+
+    }
+    .link{
+        background-color: white;
+        color:black;
+        font-size: 18px;
+        text-decoration: none;
+        float: none;
+        position:relative;
+        left:29%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    }
+
+    img{
+        width:50px;
+        height:40px;
+    }
+    .link:hover{
+        color: red;
+    }
+    .div1{
+        background-color: #fff;
+    
+    }
+    body {
+        font-family:'Courier New', Courier, monospace;
+        background-color: rgba(128, 128, 128, 0.450);
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 20px;
+        /* background-color: #fff; */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    label, input, textarea {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    input[type="submit"] {
+        transition:0.3s;
+        background-color: #0056b3;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        position:relative;
+        left:45%;
+        border-radius: 5rem;
+        
+    }
+
+    input[type="submit"]:hover {
+        transform: scale(0.9);
+        background-color: blue;
+        /* background-color: rgb(13, 158, 69); */
+    }
+</style>
+</head>
+<body>
+  <h1 id="h1a"><img src="Screenshot 2023-10-28 112313.png" alt="logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPORTS LEAGUE MANAGEMENT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Screenshot 2023-10-28 112313.png" alt="logo"></h1><br>
+
+  <div class="div1">
+    <a class="link" href="index.html">SPORTS&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a class="link" href="Platforms.html">PLATFORMS&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a class="link" href="Leagues.html">LEAGUES&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a class="link" href="Feedback.html">FEEDBACKS&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a class="link" href="contactus.html">CONTACT US&nbsp;&nbsp;&nbsp;&nbsp;</a>
+  </div><br>
+    <div class="container">
+        <h1 id="h1b">Feedback Form</h1><br>
+        <form action="submit_feedback.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+           
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+
+            <input type="submit" value="Submit">
+            <!-- <div class="link">
+                <a class='join-link' href='/register'>Submit</a>
+            </div> -->
+        </form>
+    </div>
+    <br><br><br>
+    <pre style="cursor :pointer; text-align: center; background-color: #33333300;">&#169; All rights reserved.</pre>
+    <br>
+</body>
+</html>
+
